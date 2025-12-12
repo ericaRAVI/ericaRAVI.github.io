@@ -1,0 +1,26 @@
+
+:root{--accent:#0b6cff;--bg:#f7f9fc;--card:#fff;--muted:#55606a}
+*{box-sizing:border-box}
+body{font-family:Inter,Segoe UI,Roboto,Arial,sans-serif;margin:0;color:#0b2948;background:var(--bg);-webkit-font-smoothing:antialiased}
+.container{max-width:1100px;margin:0 auto;padding:18px}
+.site-header{background:linear-gradient(90deg,#ffffff,#fbfdff);border-bottom:1px solid #eef4ff}
+.brand{display:flex;align-items:center;gap:12px}
+.brand img{height:56px}
+.brand-text h1{margin:0;font-size:18px}
+.brand-text .tag{font-size:12px;color:var(--muted)}
+.nav{display:flex;gap:12px;align-items:center}
+.nav a{padding:10px 8px;text-decoration:none;color:inherit;font-weight:600}
+.hero{display:grid;grid-template-columns:1fr 320px;gap:18px;padding:30px 0;align-items:start}
+.card{background:var(--card);padding:14px;border-radius:10px;box-shadow:0 8px 20px rgba(11,40,80,0.04)}
+.quick input, .quick textarea, form input, form textarea{width:100%;padding:10px;border-radius:8px;border:1px solid #e6f0ff;background:#fff;margin-top:8px}
+.btn{background:var(--accent);color:#fff;padding:10px 12px;border-radius:8px;text-decoration:none;border:0;font-weight:700}
+.btn.outline{background:transparent;color:var(--accent);border:2px solid var(--accent)}
+.features{padding:18px 0}
+.grid{display:flex;gap:12px}
+.service{flex:1;background:#fff;padding:12px;border-radius:8px;border:1px solid #eef6ff}
+.testimonials{padding:18px 0}
+.grid-2{display:flex;gap:12px}
+.test{flex:1;padding:12px;background:#fff;border-radius:8px;border:1px solid #eef6ff}
+.site-footer{padding:18px 0;margin-top:24px;border-top:1px solid #eef4ff;color:var(--muted);font-size:13px}
+.grid-contact{display:grid;grid-template-columns:1fr 1fr;gap:18px}
+@media(max-width:860px){.hero{grid-template-columns:1fr}.grid,.grid-2{flex-direction:column}.grid-contact{grid-template-columns:1fr}}
